@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="efectos.css">
+		<link href="logo_hbomax.jpeg" rel="shortcut icon" type="image/png">
+		<title>Contraseña</title>
+		<script src="p_contra.js" type="text/JavaScript"></script>
+	</head>
+	<body bgcolor="purple"><center>
+		<br><br>
+		<h1 class="encabezado">Manejo de cuenta y contraseña</h1>
+		<br><br>
+		<table border="3" width="70%">
+			<form name="f_contra">
+				<tr align="center">
+					<td><p>Indica tu cuenta</p></td>
+					<td><input type="text" name="c_cta" class="campo" maxlength="10" onClick="campos_azules()"></td>
+				</tr>
+				<tr align="center">
+					<td><p>Indica tu password</p></td>
+					<td><input type="password" name="c_pass" class="campo" maxlength="10" onClick="campos_azules()">
+						<img src="ojo_abierto.png" width="15" height="15" onClick="mostrar()">
+						<img src="ojo_cerrado.jpg" width="15" height="15" onClick="ocultar()"
+						onClick="campos_azules()"></td>
+				</tr>
+				<tr align="center">
+					<td><input name="b_envia" type="button" class="boton_azul" value="Enviar" onClick="enviar()"></td>
+					<td><input name="b_reset" type="reset" class="boton_rojo" value="Reiniciar"></td>
+				</tr>
+				<input name="intentos" type="hidden" value="0">
+			</form>
+		</table>
+	</center></body>
+</html>
+
+
